@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css1/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-------html body part----->
+  
+   <h2>
+    Simple Calculator
+  </h2>
+  <div class="pro">
+  <h4>Num 1 </h4><input type="text"  id="num1">
+  <h4>Num 2 </h4><input type="text"  id="num2"><br>
+  <h4>Result</h4><input type="text"  id="txtresult"><br>
+  <div class="bt">
+  <input type="button" id="but" class="butt" value="*">
+  <input type="button" id="but1" class="butt" value="-"><br>
+  <input type="submit" id="but2" class="butt" value="+">
+  <input type="button" id="but3" class="butt" value="/">
+  </div>
+</div>
+
+<!---------jquer part----------->
+  <script>
+    $(document).ready(function(){
+      ///addition//////
+       $("#but2").click(function(){
+       var a = $("#num1").val();
+       var b = $("#num2").val();
+       var r = parseInt(a) + parseInt(b); 
+
+       $("#txtresult").val(r);
+
+       });
+
+      //////////multiplication/////// 
+       $("#but").click(function(){
+       var a = $("#num1").val();
+       var b = $("#num2").val();
+       var r = a * b;
+
+       $("#txtresult").val(r);
+      });
+       
+       //////////subtraction/////////
+       $("#but1").click(function(){
+       var a = $("#num1").val();
+       var b = $("#num2").val();
+       var r = a - b;
+
+       $("#txtresult").val(r);
+      });
+       
+       //////////division//////
+       $("#but3").click(function(){
+       var a = $("#num1").val();
+       var b = $("#num2").val();
+       var r = a / b;
+
+       $("#txtresult").val(r);
+
+       
+       });
+    });
+  </script>
+</body>
+  </html>

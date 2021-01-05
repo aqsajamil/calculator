@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico|Oxygen);
+
+body {
+  background-color: rgb(169, 188, 209);
+}
+.pro{
+  margin-left:44%;
+  
+  
+}
+h2{
+  text-align: center;
+}
+.butt {
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  border: none;
+  background-color: #eee;
+  padding: 10px 0;
+  margin: 24px 5px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 1px 1px rgb(59, 55, 55);
+  width: 80px;
+  outline: none;
+  font-size: 25px;
+}
+.butt:hover
+{
+  background:rgb(24, 177, 182);
+  color:#000;
+}
